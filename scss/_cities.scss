@@ -1,0 +1,56 @@
+.location {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+
+    .city-img {
+        transition: 0.5s;
+    }
+
+    &:hover .city-img {
+        transform: scale(1.1);
+    }
+
+    &:hover .big-letter {
+        opacity: 1;
+    }
+
+    &:hover .go-link {
+        opacity: 1;
+    }
+
+    .city-name {
+        color: $white;
+        font-size: 25px;
+        font-weight: 500;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .big-letter {
+        position: absolute;
+        bottom: 0;
+        font-size: 200px;
+        font-weight: bold;
+        margin-bottom: 0;
+        line-height: 0.7;
+        margin-left: -17px;
+        overflow: hidden;
+        color: $letter-opacity;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .go-link {
+        margin: 0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 50px;
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 2;
+    }
+}

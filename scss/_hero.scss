@@ -1,0 +1,90 @@
+.hero-content {
+    .hero {
+        .user-location-input {
+            display: flex;
+            align-items: center;
+
+            input {
+                padding: 18px 15px;
+                width: 550px;
+                border: 1px solid $gray;
+                position: relative;
+
+                &:focus {
+                    border: 1px solid transparent;
+                    outline: 2px solid $color-one;
+                }
+            }
+
+            input:focus+span {
+                margin-left: 15px;
+                margin-top: -35px;
+                background: $white;
+                display: block;
+                font-size: 11px;
+                padding: 5px;
+                color: $color-one;
+            }
+
+            span {
+                position: absolute;
+                transform: translateY(-50%);
+                transition: 0.2s;
+                pointer-events: none; //important
+                padding-left: 15px;
+                margin-top: 21px;
+                color: $gray;
+            }
+        }
+
+        .input-icon {
+            position: relative;
+            right: 40px;
+            top: 0%;
+            color: $color-one;
+            display: flex;
+            cursor: pointer;
+        }
+
+        .deliver-btn {
+            height: 100%;
+            padding: 19px 50px;
+            margin: 0px 15px;
+            background-color: $color-one;
+            color: $white;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.4s;
+
+            &:hover {
+                background-color: $btn-hover;
+                padding: 19px 50px;
+            }
+        }
+
+        .pick-up-btn {
+            @extend .deliver-btn;
+        }
+
+
+        display: flex;
+        flex-direction: column;
+        min-height: 540px;
+        justify-content: center;
+        width: 980px;
+        margin-top: 50px;
+    }
+}
+
+.big-img {
+    width: 33%;
+    min-height: 540px;
+    margin-left: 62%;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    display: block;
+    background-size: cover;
+}

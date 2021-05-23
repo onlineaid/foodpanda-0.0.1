@@ -1,0 +1,1185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Foodpanda</title>
+</head>
+
+<body>
+
+  <!-- apply rider  -->
+  <div id="apply">
+    <div class="rider p-1 d-flex align-items-center justify-content-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-bag-plus-fill"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM8.5 8a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V12a.5.5 0 0 0 1 0v-1.5H10a.5.5 0 0 0 0-1H8.5V8z" />
+      </svg>
+
+      <h5 class="text-white pr-5 mb-0"> Join our foodpanda rider team !</h5>
+
+      <a href="apply.html" class="btn -btn-link text-white text-decoration-none border-white rounded-0">APPLY NOW</a>
+
+      <svg onclick="apply()" xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor"
+        class="bi bi-x" viewBox="0 0 16 16">
+        <path
+          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+      </svg>
+
+
+    </div>
+  </div>
+
+  <!-- header start  -->
+  <header class="header shadow-sm">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- logo   -->
+        <div class="col-md-2">
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/foodpanda-logo-2.png" alt="">
+            </a>
+          </div>
+        </div>
+        <!-- nav  -->
+        <div class="col-md-10">
+          <nav>
+            <!-- language  -->
+            <div class="lan">
+              <div class="en"><strong>EN</strong></div>
+              <div class="bn"><strong>BN</strong></div>
+            </div>
+            <!-- login -->
+            <div class="login">
+              <a href="login.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor"
+                  class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
+                <small><strong>LOGIN</strong></small>
+              </a>
+            </div>
+            <!-- cart  -->
+            <div class="cart">
+              <a href="cart.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- main content  -->
+  <main>
+    <!-- hero content  -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="hero-content">
+              <div class="hero">
+                <!-- big title  -->
+                <div class="big-heading display-4 mb-5" style="font-size:44px;">
+                  It's the food you love, delivered
+                </div>
+                <!-- user location finder  -->
+                <div class="user-location-input bg-white p-3 mt-3 shadow-lg">
+                  <input type="text" required="required">
+                  <span>Enter your full address</span>
+                  <div class="input-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-bullseye" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                      <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+                      <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
+                      <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                    </svg>
+                  </div>
+                  <button class="deliver-btn btn rounded-0">DELIVERY</button>
+                  <button class="pick-up-btn btn rounded-0">PICK UP</button>
+                </div>
+              </div>
+            </div>
+            <div class="big-img" style="background: url(./img/hero-home-bd.jpg); background-size: cover; background-repeat: no-repeat;
+              background-position-y: center;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- partnership  -->
+    <section class="mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="twin-title">
+              <div class="big-one">
+                <h1>Partners</h1>
+              </div>
+              <div class="small-one">
+                <h3>You prepare the food, we handle the rest</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- partner img  -->
+      <div class="partner-img"
+        style="background: url(./img/home-vendor-bd.jpg); background-size: cover; background-repeat: no-repeat; background-position-y: center;">
+      </div>
+      <!-- partner offer and start -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="partner-des shadow-lg">
+              <h4>List your restaurant on foodpanda</h4>
+
+              <p>Would you like thousands of new customers to taste your amazing food? So would we! </p>
+
+              <p>
+                It's simple: we list your menu online, help you process orders, pick them up, and deliver them to
+                hungry
+                pandas - in a heartbeat!
+              </p>
+
+              <p class="mb-5">Interested? Let's start our partnership today!</p>
+
+              <!-- btn  -->
+              <div class="get-btn text-right">
+                <button class="partner-btn btn rounded-0">GET STARTED</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- city  -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="twin-title">
+              <div class="big-one">
+                <h1>Cities</h1>
+              </div>
+              <div class="small-one">
+                <h3>Find us in these cities and many more!</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- five column row  -->
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+          <!-- dhaka  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-title-Dhaka.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Dhaka</div>
+              <span class="big-letter">D</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Chittagong  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-title-Chittagong.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Chittagong</div>
+              <span class="big-letter">C</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Sylhet  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-title-Sylhet.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Sylhet</div>
+              <span class="big-letter">S</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Cox\'s\ Bazaar  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-title-Cox\'s\ Bazaar.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Cox's Bazaar</div>
+              <span class="big-letter">C</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Savar  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Savar.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Savar</div>
+              <span class="big-letter">S</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Rajshahi  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Rajshahi.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Rajshahi</div>
+              <span class="big-letter">R</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Khulna  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Khulna.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Khulna</div>
+              <span class="big-letter">K</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Keraniganj  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Keraniganj.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Keraniganj</div>
+              <span class="big-letter">K</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Gazipur  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Tongi.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Gazipur</div>
+              <span class="big-letter">G</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- cumilla  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-cumilla.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">cumilla</div>
+              <span class="big-letter">C</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Rangpur  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Rangpur.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Rangpur</div>
+              <span class="big-letter">R</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Barisal  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Barisal.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Barisal</div>
+              <span class="big-letter">B</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Faridpur  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Faridpur.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Faridpur</div>
+              <span class="big-letter">F</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Jessore  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Jessore.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Jessore</div>
+              <span class="big-letter">J</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Dinajpur  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Dinajpur.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Dinajpur</div>
+              <span class="big-letter">D</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Bogra  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Bogra.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Bogra</div>
+              <span class="big-letter">B</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- noakhali  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-noakhali.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Noakhali</div>
+              <span class="big-letter">N</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- feni  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-feni.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Feni</div>
+              <span class="big-letter">F</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- narsingdi  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-narsingdi.jpg); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Narsingdi</div>
+              <span class="big-letter">N</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- tangail  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-tangail.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Tangail</div>
+              <span class="big-letter">T</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Satkhira  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Satkhira.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Satkhira</div>
+              <span class="big-letter">S</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Sirajganj  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Sirajganj.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Sirajganj</div>
+              <span class="big-letter">S</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Gopalganj  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Gopalganj.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Gopalganj</div>
+              <span class="big-letter">G</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Kishoreganj  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Kishoreganj.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Kishoreganj</div>
+              <span class="big-letter">K</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Kushtia  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Kushtia.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Kushtia</div>
+              <span class="big-letter">K</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Munshiganj  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Munshiganj.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Munshiganj</div>
+              <span class="big-letter">M</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Naogaon  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Naogaon.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Naogaon</div>
+              <span class="big-letter">N</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Chandpur  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Chandpur.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Chandpur</div>
+              <span class="big-letter">C</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Manikganj  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Manikganj.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Manikganj</div>
+              <span class="big-letter">M</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Brahmanbaria  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Brahmanbaria.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Brahmanbaria</div>
+              <span class="big-letter">B</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Mymensingh  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Mymensingh.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Mymensingh</div>
+              <span class="big-letter">M</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Jhenaidha  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Jhenaidha.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Jhenaidha</div>
+              <span class="big-letter">J</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Lakshmipur  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Lakshmipur.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Lakshmipur</div>
+              <span class="big-letter">L</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Bagerhat  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Bagerhat.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Bagerhat</div>
+              <span class="big-letter">B</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Bhola  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Bhola.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Bhola</div>
+              <span class="big-letter">B</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Bandarban  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Bandarban.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Bandarban</div>
+              <span class="big-letter">B</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Natore  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Natore.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Natore</div>
+              <span class="big-letter">N</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Moulvibazar  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Moulvibazar.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Moulvibazar</div>
+              <span class="big-letter">M</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Pirojpur  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Pirojpur.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Pirojpur</div>
+              <span class="big-letter">P</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Pabna  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Pabna.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Pabna</div>
+              <span class="big-letter">P</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Nilphamari  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Nilphamari.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Nilphamari</div>
+              <span class="big-letter">N</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Jamalpur  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Jamalpur.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Jamalpur</div>
+              <span class="big-letter">J</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Kurigram  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Kurigram.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Kurigram</div>
+              <span class="big-letter">J</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Gaibandha  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Gaibandha.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Gaibandha</div>
+              <span class="big-letter">G</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Shariatpur  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Shariatpur.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Shariatpur</div>
+              <span class="big-letter">S</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Barguna  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Barguna.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Barguna</div>
+              <span class="big-letter">B</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Sherpur  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Sherpur.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Sherpur</div>
+              <span class="big-letter">S</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Meherpur  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Meherpur.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Meherpur</div>
+              <span class="big-letter">M</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Chuadanga  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Chuadanga.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Chuadanga</div>
+              <span class="big-letter">C</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Madaripur  -->
+          <div class="col">
+            <div class="location">
+              <div class="city-img"
+                style="background: url(./img/city/city-tile-Madaripur.png); background-position: center; background-size: cover; height: 272px;">
+              </div>
+              <div class="city-name">Madaripur</div>
+              <span class="big-letter">M</span>
+              <a class="go-link btn pick-up-btn p-2 rounded-0 text-white" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                  class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- phone app  -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="twin-title" style="z-index: 11;">
+              <div class="big-one">
+                <h1>App</h1>
+              </div>
+              <div class="small-one">
+                <h3>Put us in your pocket</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- theme bg  -->
+      <div class="theme-bg position-relative pb-5">
+        <div class="phone-app">
+          <div class="phone-img">
+            <img class="w-100" src="img/home-foodpanda-apps.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd container  -->
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="partner-des bg-transparent p-0">
+              <h4 class="text-white">Download the food you love</h4>
+
+              <p class="text-white">
+                It's all at your fingertips -- the restaurants you love. Find the right food to suit your mood, and make
+                the first bite last. Go ahead, download us.
+              </p>
+
+              <div class="app-btn">
+                <a href="#"> <img src="img/App-Store-Button-PNG.png" alt=""></a>
+                <a href="#"> <img src="img/Untitled-1.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Office   -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="twin-title">
+              <div class="big-one">
+                <h1>Office</h1>
+              </div>
+              <div class="small-one">
+                <h3>You prepare the food, we handle the rest</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- officce img  -->
+      <div class="partner-img"
+        style="background: url(./img/home-corporate-bd.jpg); background-size: cover; background-repeat: no-repeat; background-position-y: center;">
+      </div>
+
+
+      <!-- Office -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="partner-des shadow-lg" style="margin-top: -167px;">
+              <h4>foodpanda for business</h4>
+
+              <p class="mb-5">Order lunch, fuel for meetings or late-night deliveries to the office. Your favorite
+                restaurants coming to a desk near
+                you.
+              </p>
+
+              <!-- btn  -->
+              <div class="get-btn text-right">
+                <button class="partner-btn btn rounded-0">GET STARTED</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer  -->
+  <footer class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="footer-box border-bottom py-5">
+            <h5 class="mb-5">
+              Order food from the best restaurants with foodpanda Bangladesh</h5>
+            <p class="mb-5">
+              Are you hungry? Did you have a long and stressful day? Interested in getting a cheesy pizza delivered to
+              your home or office? Then foodpanda Bangladesh is the right destination for you! foodpanda offers you a
+              long
+              and detailed list of the best restaurants and local favourites near you to help satisfy your hunger
+              through
+              our online food delivery service. Cuisines are diverse: whether you fancy a juicy burger from Takeout,
+              fresh
+              sushi from Samdado or peri peri chicken from Nando's, foodpanda Bangladesh has a wide range of 2000+
+              restaurants available from Dhaka, to Chittagong through to Sylhet. From a healthy lunch to evening snacks
+              to
+              a hearty dinner, foodpanda provides you with the means to satisfy your cravings throughout the day. Sit
+              back
+              and relax - let foodpanda Bangladesh take the pressure off your shoulders.
+            </p>
+
+            <p><a href="#"> Click here to more</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

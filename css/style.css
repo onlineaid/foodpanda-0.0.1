@@ -1,0 +1,353 @@
+.theme-bg {
+  background-color: #D70F64;
+  height: 432px;
+}
+
+#apply {
+  position: fixed;
+  height: 64px;
+  background-color: #D70F64;
+  color: #fff;
+  width: 100%;
+  z-index: 9999;
+}
+
+#apply a {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 13px 15px;
+}
+
+#apply svg {
+  margin: 15px;
+}
+
+#apply svg:last-child {
+  position: absolute;
+  right: 0;
+}
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  top: 64px;
+  width: 100%;
+  display: block;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  z-index: 1000;
+}
+
+.header .logo img {
+  height: 50px;
+  width: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header nav .lan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 1px solid rgba(207, 207, 207, 0.883);
+  border-right: 1px solid rgba(207, 207, 207, 0.883);
+  font-size: 12px;
+  padding: 0 20px;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav .lan .en {
+  border-right: 1px solid #000;
+  padding-right: 4px;
+}
+
+.header nav .lan .bn {
+  padding-left: 4px;
+}
+
+.header nav .login {
+  padding: 0px 20px;
+  border-right: 1px solid rgba(207, 207, 207, 0.883);
+}
+
+.header nav .login svg {
+  color: #fff;
+  background-color: #D70F64;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.header nav .login small {
+  padding: 0 5px;
+  color: #000;
+  font-size: 12px;
+}
+
+.header nav .cart {
+  padding: 0px 20px;
+}
+
+.header nav .cart svg {
+  color: #D70F64;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pick-up-btn, .partner-des .partner-btn {
+  height: 100%;
+  padding: 19px 50px;
+  margin: 0px 15px;
+  background-color: #D70F64;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.pick-up-btn:hover, .partner-des .partner-btn:hover {
+  background-color: #b90742;
+  padding: 19px 50px;
+}
+
+p {
+  color: #707070;
+  font-size: 18px;
+}
+
+.hero-content .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 540px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 980px;
+  margin-top: 50px;
+}
+
+.hero-content .hero .user-location-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-content .hero .user-location-input input {
+  padding: 18px 15px;
+  width: 550px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.hero-content .hero .user-location-input input:focus {
+  border: 1px solid transparent;
+  outline: 2px solid #D70F64;
+}
+
+.hero-content .hero .user-location-input input:focus + span {
+  margin-left: 15px;
+  margin-top: -35px;
+  background: #fff;
+  display: block;
+  font-size: 11px;
+  padding: 5px;
+  color: #D70F64;
+}
+
+.hero-content .hero .user-location-input span {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  pointer-events: none;
+  padding-left: 15px;
+  margin-top: 21px;
+  color: #ccc;
+}
+
+.hero-content .hero .input-icon {
+  position: relative;
+  right: 40px;
+  top: 0%;
+  color: #D70F64;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.hero-content .hero .deliver-btn, .hero-content .hero .pick-up-btn, .hero-content .hero .partner-des .partner-btn, .partner-des .hero-content .hero .partner-btn {
+  height: 100%;
+  padding: 19px 50px;
+  margin: 0px 15px;
+  background-color: #D70F64;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.hero-content .hero .deliver-btn:hover, .hero-content .hero .pick-up-btn:hover, .hero-content .hero .partner-des .partner-btn:hover, .partner-des .hero-content .hero .partner-btn:hover {
+  background-color: #b90742;
+  padding: 19px 50px;
+}
+
+.big-img {
+  width: 33%;
+  min-height: 540px;
+  margin-left: 62%;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  display: block;
+  background-size: cover;
+}
+
+.twin-title {
+  position: relative;
+}
+
+.twin-title .big-one h1 {
+  font-size: 170px;
+  font-weight: bold;
+  color: rgba(214, 213, 213, 0.192);
+  margin-bottom: 0;
+  line-height: 0.7;
+}
+
+.twin-title .small-one {
+  position: absolute;
+  top: 50%;
+}
+
+.twin-title .small-one h3 {
+  font-weight: 300;
+}
+
+.partner-img {
+  height: 432px;
+  position: relative;
+}
+
+.partner-des {
+  background: #fff;
+  padding: 35px;
+  margin-top: -325px;
+  position: relative;
+  z-index: 11;
+}
+
+.partner-des h4 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.partner-des .partner-btn {
+  color: #fff;
+  padding: 12px 70px;
+}
+
+.partner-des .partner-btn:hover {
+  padding: 12px 70px;
+  color: #fff;
+}
+
+.location {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.location .city-img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.location:hover .city-img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.location:hover .big-letter {
+  opacity: 1;
+}
+
+.location:hover .go-link {
+  opacity: 1;
+}
+
+.location .city-name {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.location .big-letter {
+  position: absolute;
+  bottom: 0;
+  font-size: 200px;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 0.7;
+  margin-left: -17px;
+  overflow: hidden;
+  color: #d70f626e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.location .go-link {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 2;
+}
+
+.phone-app {
+  position: absolute;
+  right: 20px;
+  max-width: 700px;
+  top: -70px;
+  left: 50%;
+}
+
+.app-btn img {
+  width: 200px;
+}
+/*# sourceMappingURL=style.css.map */

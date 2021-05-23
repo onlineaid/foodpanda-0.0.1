@@ -1,0 +1,20 @@
+#apply{
+    a{
+        font-size: 14px;
+        font-weight: bold;
+        padding: 13px 15px;
+    }
+    svg{
+        margin: 15px;
+        &:last-child{
+            position: absolute;
+            right: 0;
+        }
+    }
+    position: fixed;
+    height: 64px;
+    background-color: $color-one;
+    color: #fff;
+    width: 100%;
+    z-index: 9999;
+}

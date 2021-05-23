@@ -1,0 +1,25 @@
+a {
+    text-decoration: none;
+}
+
+.pick-up-btn {
+    height: 100%;
+    padding: 19px 50px;
+    margin: 0px 15px;
+    background-color: $color-one;
+    color: $white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.4s;
+
+    &:hover {
+        background-color: $btn-hover;
+        padding: 19px 50px;
+    }
+}
+
+
+p {
+    color: $gray-3;
+    font-size: 18px;
+}
